@@ -1,0 +1,55 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #2c3e50;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+.clock {
+    font-size: 6rem;
+    letter-spacing: 5px;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.alarm-setter {
+    margin-top: 20px;
+}
+
+input[type="time"] {
+    padding: 10px;
+    font-size: 1.5rem;
+    border: none;
+    background-color: #34495e;
+    color: white;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #1abc9c;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #16a085;
+}
